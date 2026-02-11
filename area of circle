@@ -1,0 +1,34 @@
+
+import math
+
+
+# Asking user for radius value
+
+
+
+radius1 = (input("What is the radius of the circle? "))
+
+r1 = float(radius1)
+# Checking for invalid input
+if r1 < 0:
+    print("Please input a valid value.")
+            
+
+else :
+# Fromula for calculating the area of the circle
+    area1 = (math.pi * (r1 ** 2))
+             
+
+# Fromula for calculating the circumference of the circle
+    circumference1 = float(2 * math.pi * r1)
+
+# Rounding the answers to the 4th decimal, and turning value into string.
+
+    a1 = str(round(area1, 4))
+    c1 = str(round(circumference1,4))
+
+# Printing the area and circumference of the circle
+
+    print ("The area of the circle is " + a1 + ".\nThe circumference of the circle is "+ c1 + ".")
+                 
+
